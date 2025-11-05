@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My jQuery Mobile Lab App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery & jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: none;
+    }
+
+    .ui-content {
+      text-align: center;
+      padding-top: 25px;
+    }
+
+    .intro-text {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .ui-btn {
+      width: 230px;
+      margin: 6px auto;
+      background-color: #4a90e2 !important;
+      color: #fff !important;
+      border-radius: 8px;
+      text-shadow: none;
+      font-weight: 600;
+    }
+
+    .ui-btn:hover {
+      background-color: #357abd !important;
+    }
+
+    footer h4 {
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🏠 HOME PAGE -->
+  <div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+      <h1>My jQuery Mobile Lab App</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p class="intro-text">👋 Welcome to my jQuery Mobile practice site! </p>
+
+      <a href="part1.html" class="ui-btn">Part 1</a>
+      <a href="part2.html" class="ui-btn">Part 2</a>
+      <a href="part3.html" class="ui-btn">Part 3</a>
+      <a href="part4.html" class="ui-btn">Part 4</a>
+      <a href="part5.html" class="ui-btn">Part 5</a>
+      <a href="part6.html" class="ui-btn">Part 6</a>
+      <a href="part7.html" class="ui-btn">Part 7</a>
+      <a href="part8.html" class="ui-btn">Part 8</a>
+      <a href="part9.html" class="ui-btn">Part 9</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <h4>© 2025 My Web Design Project — [Sushmita 10DIT23F2032]</h4>
+    </div>
+  </div>
+
+  <!-- 📘 PART 1 -->
+  <div data-role="page" id="part1">
+    <div data-role="header" data-theme="b">
+      <h1>Part 1 — Hide & Show</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p id="text1">Click the button to hide or show this text!</p>
+      <a href="#" class="ui-btn" id="toggle1">Toggle Text</a>
+      <a href="#home" class="ui-btn">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- 📗 PART 2 -->
+  <div data-role="page" id="part2">
+    <div data-role="header" data-theme="b">
+      <h1>Part 2 — Change Color</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p id="colorText">Click to change my color!</p>
+      <a href="#" class="ui-btn" id="colorBtn">Change Color</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📘 PART 3 -->
+  <div data-role="page" id="part3">
+    <div data-role="header" data-theme="b">
+      <h1>Part 3 — Fade In/Out</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="https://via.placeholder.com/150" id="img1" alt="Demo">
+      <a href="#" class="ui-btn" id="fadeBtn">Fade Toggle</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📗 PART 4 -->
+  <div data-role="page" id="part4">
+    <div data-role="header" data-theme="b">
+      <h1>Part 4 — Slide Animation</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <div id="box" style="width:100px;height:100px;background:#4a90e2;margin:20px auto;"></div>
+      <a href="#" class="ui-btn" id="slideBtn">Move Box</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📘 PART 5 -->
+  <div data-role="page" id="part5">
+    <div data-role="header" data-theme="b">
+      <h1>Part 5 — Change Text</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p id="changeTxt">Original text before click.</p>
+      <a href="#" class="ui-btn" id="changeBtn">Change Text</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📗 PART 6 -->
+  <div data-role="page" id="part6">
+    <div data-role="header" data-theme="b">
+      <h1>Part 6 — Multiple Effects</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p id="multi">Watch me change with multiple effects!</p>
+      <a href="#" class="ui-btn" id="multiBtn">Activate</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📘 PART 7 -->
+  <div data-role="page" id="part7">
+    <div data-role="header" data-theme="b">
+      <h1>Part 7 — Input Alert</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username" placeholder="Your name">
+      <a href="#" class="ui-btn" id="alertBtn">Show Name</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📗 PART 8 -->
+  <div data-role="page" id="part8">
+    <div data-role="header" data-theme="b">
+      <h1>Part 8 — Image Toggle</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="https://via.placeholder.com/200/4a90e2/ffffff?text=Image+1" id="toggleImg" style="border-radius:10px;">
+      <a href="#" class="ui-btn" id="imgBtn">Switch Image</a>
+      <a href="#home" class="ui-btn">Back</a>
+    </div>
+  </div>
+
+  <!-- 📘 PART 9 -->
+  <div data-role="page" id="part9">
+    <div data-role="header" data-theme="b">
+      <h1>Part 9 — Thank You</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p>🎉 Congratulations! You’ve completed all jQuery Mobile exercises.</p>
+      <a href="#home" class="ui-btn">Return to Home</a>
+    </div>
+  </div>
+
+  <!-- ✨ jQuery Script Section -->
+  <script>
+    // Part 1
+    $("#toggle1").click(() => $("#text1").slideToggle());
+
+    // Part 2
+    $("#colorBtn").click(() => $("#colorText").css("color", "#f76c6c"));
+
+    // Part 3
+    $("#fadeBtn").click(() => $("#img1").fadeToggle());
+
+    // Part 4
+    $("#slideBtn").click(() => $("#box").animate({ left: "+=150px" }, 500).animate({ left: "0px" }, 500));
+
+    // Part 5
+    $("#changeBtn").click(() => $("#changeTxt").text("The text has been changed using jQuery!"));
+
+    // Part 6
+    $("#multiBtn").click(() => {
+      $("#multi").fadeOut(300).fadeIn(300).css("color", "#4a90e2").text("Changed with fade and color!");
+    });
+
+    // Part 7
+    $("#alertBtn").click(() => {
+      let name = $("#username").val();
+      if (name.trim() !== "") alert("Hello, " + name + "!");
+      else alert("Sushmita.");
+    });
+
+    // Part 8
+    let toggle = true;
+    $("#imgBtn").click(() => {
+      if (toggle)
+        $("#toggleImg").attr("src", "https://via.placeholder.com/200/f76c6c/ffffff?text=Image+2");
+      else
+        $("#toggleImg").attr("src", "https://via.placeholder.com/200/4a90e2/ffffff?text=Image+1");
+      toggle = !toggle;
+    });
+  </script>
+
+</body>
+</html>
